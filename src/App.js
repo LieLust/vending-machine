@@ -19,6 +19,15 @@ class App extends Component {
     this.setState({ balance: this.state.balance + Number(elem) })
   }
 
+  buyProduct = elem => {
+    let products = [...this.state.products]
+    let balance = this.state.balance
+
+    balance -= products[elem].price
+    products[elem].count -= 1
+    this.setState({ products, balance })
+  }
+
   render() {
     return (
       <div className='App container'>
@@ -32,6 +41,7 @@ class App extends Component {
             <ProductList
               products={this.state.products}
               balance={this.state.balance}
+              buyProduct={this.buyProduct}
             />
           </div>
           <div className='col-xs-5 col-sm-3'>
