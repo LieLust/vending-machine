@@ -11,7 +11,8 @@ import PurchasedProductList from './components/PurchasedProductList'
 
 class App extends Component {
   state = {
-    products: products
+    products: products,
+    balance: 0
   }
   render() {
     return (
@@ -23,7 +24,10 @@ class App extends Component {
         </h1>
         <div className='row'>
           <div className='col-xs-7 col-sm-9'>
-            <ProductList />
+            <ProductList
+              products={this.state.products}
+              balance={this.state.balance}
+            />
           </div>
           <div className='col-xs-5 col-sm-3'>
             <BalancePanel />
