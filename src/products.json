@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Ristretto",
+    "price": 2,
+    "count": 1,
+    "image": "https://globalassets.starbucks.com/assets/2d1b432828cf4e6caeab205ce90da795.jpg"
+  },
+  {
+    "name": "Espresso Macchiato",
+    "price": 2.4,
+    "count": 5,
+    "image": "https://globalassets.starbucks.com/assets/9ec1c16a956143648a0406b6d6bbb532.jpg"
+  },
+  {
+    "name": "Espresso Con Panna",
+    "price": 2.5,
+    "count": 3,
+    "image": "https://globalassets.starbucks.com/assets/3b05f2d0c6e04ee98c85fb3d0ebe9ec4.jpg"
+  },
+  {
+    "name": "Ristretto Bianco",
+    "price": 3.5,
+    "count": 2,
+    "image": "https://globalassets.starbucks.com/assets/e6794a294cce4264890ab6f60fcca447.jpg"
+  },
+  {
+    "name": "Caffè Latte",
+    "price": 3.8,
+    "count": 1,
+    "image": "https://globalassets.starbucks.com/assets/932a37e967b94558b3da9e51fb07f99d.jpg"
+  },
+  {
+    "name": "Cappuccino",
+    "price": 3.9,
+    "count": 2,
+    "image": "https://globalassets.starbucks.com/assets/2237ef1d9dab486695b8e6269d41ab0a.jpg"
+  },
+  {
+    "name": "Caffè Mocha",
+    "price": 4.6,
+    "count": 1,
+    "image": "https://globalassets.starbucks.com/assets/a62bae33e2c94f82a2df64d1c5c86c17.jpg"
+  },
+  {
+    "name": "Mocha Blanc",
+    "price": 4.8,
+    "count": 2,
+    "image": "https://globalassets.starbucks.com/assets/65a17390467943bc99143508a44be6e9.jpg"
+  },
+  {
+    "name": "Caramel Macchiato",
+    "price": 4.8,
+    "count": 1,
+    "image": "https://globalassets.starbucks.com/assets/b7d9d46cdcda44ec9f4b38709a957bab.jpg"
+  },
+  {
+    "name": "Caffè Americano",
+    "price": 2.9,
+    "count": 1,
+    "image": "https://globalassets.starbucks.com/assets/67c30b9dacd4406db797b1690ac22475.jpg"
+  },
+  {
+    "name": "Café de la semaine",
+    "price": 3,
+    "count": 1,
+    "image": "https://globalassets.starbucks.com/assets/213463c5cc19440a9542a5aa602bcbc8.jpg"
+  },
+  {
+    "name": "Mocha glacé",
+    "price": 5,
+    "count": 1,
+    "image": "https://globalassets.starbucks.com/assets/b32ca2fb10c8451bbf17fe8bc406c86d.jpg"
+  }
+]
