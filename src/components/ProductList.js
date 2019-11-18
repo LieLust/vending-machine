@@ -20,7 +20,11 @@ const ProductList = ({ products, balance }) => {
             <strong className='card-text text-danger'>Solde Out</strong>
           ) : balance < products[el].price ? (
             <p className='card-text'>
-              Load <strong>{products[el].price - balance}€</strong> more
+              Load{' '}
+              <strong>
+                {Math.round((products[el].price - balance) * 100) / 100}€
+              </strong>{' '}
+              more
             </p>
           ) : (
             <p className='card-text'>
