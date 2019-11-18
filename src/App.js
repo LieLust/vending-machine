@@ -14,6 +14,11 @@ class App extends Component {
     products: products,
     balance: 0
   }
+
+  incrementBalance = elem => {
+    this.setState({ balance: this.state.balance + Number(elem) })
+  }
+
   render() {
     return (
       <div className='App container'>
@@ -31,7 +36,10 @@ class App extends Component {
           </div>
           <div className='col-xs-5 col-sm-3'>
             <BalancePanel balance={this.state.balance} />
-            <BanknotePanel />
+            <BanknotePanel
+              banknotes={['0.10', '0.20', '0.50', 1, 2, 5, 10, 20]}
+              incrementBalance={this.incrementBalance}
+            />
             <PurchasedProductList />
           </div>
         </div>
