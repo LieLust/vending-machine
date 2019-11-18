@@ -30,7 +30,7 @@ class App extends Component {
             />
           </div>
           <div className='col-xs-5 col-sm-3'>
-            <BalancePanel />
+            <BalancePanel balance={this.state.balance} />
             <BanknotePanel />
             <PurchasedProductList />
           </div>
