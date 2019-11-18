@@ -12,7 +12,8 @@ import PurchasedProductList from './components/PurchasedProductList'
 class App extends Component {
   state = {
     products: products,
-    balance: 0
+    balance: 0,
+    purchaseHistory: []
   }
 
   incrementBalance = elem => {
@@ -22,10 +23,11 @@ class App extends Component {
   buyProduct = elem => {
     let products = [...this.state.products]
     let balance = this.state.balance
+    let purchaseHistory = [...this.state.purchaseHistory, products[elem]]
 
     balance -= products[elem].price
     products[elem].count -= 1
-    this.setState({ products, balance })
+    this.setState({ products, balance, purchaseHistory })
   }
 
   render() {
@@ -50,7 +52,9 @@ class App extends Component {
               banknotes={['0.10', '0.20', '0.50', 1, 2, 5, 10, 20]}
               incrementBalance={this.incrementBalance}
             />
-            <PurchasedProductList />
+            <PurchasedProductList
+              purchaseHistory={this.state.purchaseHistory}
+            />
           </div>
         </div>
       </div>
